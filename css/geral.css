@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  outline: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+:root {
+  --blue: #06102C;
+  --green: #20C971;
+  --lightgreen: #E0F7EB;
+  --white: #ffffff;
+}
+
+.button {
+  background-color: var(--green);
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease 0s;
+  border: 2px solid transparent;
+
+  &:hover {
+    border: 2px solid var(--blue);
+  }
+}
+
