@@ -1,0 +1,24 @@
+main {
+  background-color: var(--white);
+
+  > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text-main {
+    > h1 {
+      font-size: 5rem;
+      font-weight: 600;
+      line-height: 90%;
+    }
+
+    > p {
+      margin: 1rem 0 2rem;
+      font-size: 1.125rem;
+    }
+  }
+
+}

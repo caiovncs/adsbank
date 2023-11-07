@@ -1,9 +1,15 @@
 .logo-header {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: var(--blue);
   display: flex;
   align-items: center;
+
+  > img {
+    width: 53px;
+    height: 48px;
+    margin-right: .4rem;
+  }
 }
 
 header {
@@ -28,6 +34,7 @@ nav ul {
   > li a {
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease 0s;
+    font-size: 0.875rem;
 
     &:hover {
       border-bottom: 2px solid var(--blue);
