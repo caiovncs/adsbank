@@ -29,6 +29,12 @@
     background-color: var(--white);
     padding: 1.25rem;
     max-width: 280px;
+    border: 2px solid transparent;
+    transition: .2s;
+
+    &:hover {
+      border: 2px solid var(--green);
+    }
 
     > h3 {
       margin-top: 0.875rem;
