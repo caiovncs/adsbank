@@ -1,0 +1,32 @@
+.download-section {
+  background-color: var(--lightgreen);
+
+  > div {
+    display: grid;
+    grid-template-columns: 1fr 384px;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+
+    > h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      grid-column: 1;
+    }
+
+    > p {
+      font-size: 1.25rem;
+      max-width: 90%;
+      grid-column: 1;
+      margin-top: -2rem;
+    }
+
+    > img {
+      grid-area: 1/2/4;
+      width: 340px;
+    }
+  }
+}
+
+.downloads img:nth-child(2) {
+  margin-left: 1.875rem;
+}
