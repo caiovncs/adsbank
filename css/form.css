@@ -1,0 +1,158 @@
+.form-section {
+  background-color: var(--blue);
+
+  > div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      padding-bottom: 6rem;
+      padding-top: 6rem;
+    
+    > h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      grid-column: 1;
+      color: var(--white);
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 200px 400px 254px 1fr;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+label {
+  color: var(--white);
+  display: block;
+  margin-bottom: .4rem;
+  width: 100%;
+}
+
+.form-group-1, .form-group-3 {
+  grid-column: 1/3;
+}
+
+.form-group-2 {
+  grid-column: 3/-1;
+}
+
+.form-group-4 {
+  grid-column: 3/4;
+}
+
+.form-group-7 {
+  grid-column: 2/-1;
+}
+
+.form-group-submit {
+  grid-column: 4;
+}
+
+input {
+  height: 2.3rem;
+  padding-left: 8px;
+  border: 2px solid transparent;
+  width: 100%;
+  font-size: 1rem;
+}
+
+input:focus {
+  border: 2px solid var(--green);
+}
+
+.cartao-group {
+  grid-column: 1/-1;
+  margin-top: -1rem;
+}
+
+.custom-radio {
+  display: inline-block;
+  position: relative;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-radio label {
+  display: block;
+  width: 150px; 
+  padding: .5rem;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: width 0.2s, filter 0.2s, color 0.2s;
+  color: var(--white); 
+  font-weight: 600;
+}
+
+.custom-radio input:checked + label {
+  width: 170px;
+  padding: .5rem;
+  filter: opacity(1);
+}
+
+.custom-radio:nth-child(1) input:checked + label {
+  color: var(--blue); 
+}
+
+.custom-radio:nth-child(2) input:checked + label {
+  color: var(--green); 
+}
+
+.custom-radio:nth-child(3) input:checked + label {
+  color: var(--blue);
+}
+
+.custom-radio:not(:checked) label {
+  filter: opacity(0.9);
+}
+
+.custom-radio:nth-child(1) {
+  background-color: #D6AE7B;
+}
+
+.custom-radio:nth-child(2) {
+  background-color: var(--blue);
+  border: 2px solid white;
+}
+
+.custom-radio:nth-child(3) {
+  background-color: var(--green);
+}
+
+
+.form-group-checkbox {
+  display: flex;
+  align-items: center;
+  margin-top: .5rem; 
+}
+
+.form-group-checkbox input {
+  height: 2rem; 
+  width: 2rem;  
+  margin-right: 0.5rem;
+  transform: scale(1.3);
+}
+
+.form-group-checkbox label {
+  margin-top: 6px;
+  margin-left: 6px;
+  white-space: nowrap;
+}
+
+#enviar-btn {
+  grid-column: 4;
+  margin-top: 1rem; 
+
+  &:hover {
+    border: 2px solid var(--white);
+  }
+}
