@@ -23,6 +23,11 @@ form {
   grid-template-columns: 200px 400px 254px 1fr;
   gap: 1.25rem;
   width: 100%;
+
+  > p {
+    color: var(--white);
+    margin-bottom: .4rem;
+  }
 }
 
 label {
@@ -91,6 +96,7 @@ input:focus {
   transition: width 0.2s, filter 0.2s, color 0.2s;
   color: var(--white); 
   font-weight: 600;
+  margin-top: 4px;
 }
 
 .custom-radio input:checked + label {
@@ -151,6 +157,7 @@ input:focus {
 #enviar-btn {
   grid-column: 4;
   margin-top: 1rem; 
+  white-space: nowrap;
 
   &:hover {
     border: 2px solid var(--white);
