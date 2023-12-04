@@ -52,3 +52,35 @@
     color: var(--white);
   }
 }
+
+
+@media (max-width: 767px) {
+  .cards-section {
+    > div {
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+
+      > h1 {
+        font-size: 2rem;
+      }
+  
+      > img {
+        width: 330px;
+      }
+  
+      > p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .cards-btn {
+    gap: 1rem;
+  }
+
+  .secondary-button {
+    padding: 0.5rem 1.3rem;
+    font-size: 0.875rem;
+  }
+  
+}

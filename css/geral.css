@@ -37,3 +37,15 @@
     border: 2px solid var(--blue);
   }
 }
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .button {
+    padding: 0.5rem 1.3rem;
+    font-size: 0.875rem;
+  }
+}

@@ -30,3 +30,37 @@
 .downloads img:nth-child(2) {
   margin-left: 1.875rem;
 }
+
+@MEDIA (MAX-WIDTH: 767px) {
+  .download-section {
+    > div {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+
+      > h1 {
+        font-size: 2rem;
+      }
+  
+      > p {
+        font-size: 1rem;
+        max-width: 100%;
+        grid-column: 1;
+        margin-top: 0rem;
+      }
+
+      > img {
+        display: none;
+      }
+    }
+  }
+
+  .downloads img:nth-child(2) {
+    margin-left: 1.5rem;
+  }
+
+  .downloads img{
+    width: 180px;
+  }
+}

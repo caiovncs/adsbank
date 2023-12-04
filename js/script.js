@@ -90,3 +90,27 @@ document.addEventListener('DOMContentLoaded', function () {
       return /^\d{5}\-\d{3}$/.test(cep);
   }
 });
+
+
+//Scroll ao clicar no CTA
+function scrollToForm() {
+  const formSection = document.querySelector('.form-section');
+  const formSectionTop = formSection.offsetTop - 5000;
+
+  window.scrollTo({
+    top: formSectionTop,
+    behavior: 'smooth'
+  });
+
+  const firstInput = formSection.querySelector('input');
+  if (firstInput) {
+    firstInput.focus();
+  }
+}
+
+
+const btnActionScroll = document.querySelector('.cta');
+btnActionScroll.addEventListener('click', scrollToForm);
+
+const btnMiddle = document.querySelector('.middle'); 
+btnMiddle.addEventListener('click', scrollToForm);

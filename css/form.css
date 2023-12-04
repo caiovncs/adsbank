@@ -163,3 +163,91 @@ input:focus {
     border: 2px solid var(--white);
   }
 }
+
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr; 
+  }
+
+  .form-group-1,
+  .form-group-3,
+  .form-group-2,
+  .form-group-4,
+  .form-group-7 {
+    grid-column: 1/-1; 
+  }
+
+  .cartao-group {
+    grid-column: 1/-1;
+    margin-top: 0; /
+  }
+
+  .custom-radio,
+  .form-group-checkbox,
+  #enviar-btn {
+    grid-column: 1/-1; 
+  }
+
+  .custom-radio {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-section {
+    > div {
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+      
+      > h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  form {
+    grid-template-columns: 1fr; 
+  }
+
+  .form-group-1,
+  .form-group-3,
+  .form-group-2,
+  .form-group-4,
+  .form-group-7 {
+    grid-column: 1/-1; 
+  }
+
+  .cartao-group {
+    grid-column: 1/-1;
+    margin-top: 0; 
+  }
+
+  .custom-radio,
+  .form-group-checkbox,
+  #enviar-btn {
+    grid-column: 1/-1;
+  }
+
+  .custom-radio {
+    margin-right: 0;
+  }
+
+  input {
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  .form-group-checkbox {
+    width: 45px;
+  }
+
+  label {
+    font-size: .95rem;
+  }
+
+  .custom-radio input:checked + label {
+    width: 120px;
+  }
+}

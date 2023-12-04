@@ -45,3 +45,23 @@ nav ul {
   }
 }
 
+
+/* Responsividade */
+@media (max-width: 767px) {
+  .logo-header {
+    font-size: 1.2rem;
+    font-weight: 700;
+  
+    > img {
+      width: 43px;
+      height: 38px;
+      margin-right: .3rem;
+    }
+  }
+  
+
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

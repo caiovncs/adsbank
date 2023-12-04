@@ -93,3 +93,44 @@
 [data-anime="accordion"] dt.ativo::after {
   content: '⬏';
 }
+
+
+@media (max-width: 767px) {
+  .faq-section{
+    > div {
+      padding-top: 2.5rem;
+      padding-bottom: 5rem;
+      > h1 {
+        font-size: 2rem;
+      }
+  
+      > p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .faq-lista {
+    width: auto;
+  }
+
+  .faq-lista dt {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 0rem;
+
+  
+    &:nth-child(1) {
+    padding-top: 1.5rem;
+    }
+  
+    &.ativo {
+      padding-bottom: 1rem;
+    }
+  }
+
+  [data-anime="accordion"] dd {
+    font-size: 0.875rem;
+  }
+}

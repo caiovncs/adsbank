@@ -12,6 +12,7 @@
     }
   }
 }
+
 .second-section-content ul {
   display: flex;
   flex-direction: column;
@@ -66,4 +67,46 @@
 
 .especial-custom-h1 {
   color: var(--green)
+}
+
+@media (max-width: 767px) {
+  .second-section {
+    > div {
+      flex-direction: column;
+      gap: 2rem;
+
+      > img {
+        width: 350px;
+      }
+    }
+  }
+  
+  .item-text {
+    > h2 {
+      font-size: 1rem;
+    }
+
+    > span {
+      font-size: 0.75rem;
+      opacity: 90%;
+    }
+  }
+  
+  .second-section-content li{
+    gap: 0 1.75rem;
+
+    > img {
+      width: 49px;
+    }
+  }
+
+  .second-section-content {
+    > h1 {
+      font-size: 1.5rem;
+    }
+  
+    > p {
+      font-size: 1rem;
+    }
+  }
 }

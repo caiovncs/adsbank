@@ -15,10 +15,8 @@
       line-height: 1.125;
       margin-bottom: 3rem;
     }
-
   }
 }
-
 
 .benefits-container {
   display: flex;
@@ -46,6 +44,35 @@
       font-size: 0.875rem;
       opacity: 95%;
       line-height: 160%;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits-section {
+    > div {
+      align-items: center;
+      padding-bottom: 5rem;
+      padding-top: 5rem;
+  
+      > h1 {
+        font-size: 2rem;
+        margin-bottom: 2.8rem;
+      }
+    }
+  }
+
+  .benefits-container {
+    flex-direction: column;
+  
+    > .benefit {
+      > h3 {
+        font-size: 1.025rem;
+      }
+  
+      > p {
+        font-size: 0.75rem;
+      }
     }
   }
 }

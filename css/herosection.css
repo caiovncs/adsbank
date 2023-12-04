@@ -32,3 +32,35 @@ main {
     scale: 1.05;
   }
 }
+
+
+@media (max-width: 767px) {
+  main {
+  > div {
+    justify-content: center;
+    height: 85vh;
+  }
+
+  .text-main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    > h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+
+    }
+
+    > p {
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
+  }
+
+  .img-main img {
+    display: none;
+  }
+}
