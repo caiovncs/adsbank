@@ -108,9 +108,19 @@ function scrollToForm() {
   }
 }
 
-
 const btnActionScroll = document.querySelector('.cta');
 btnActionScroll.addEventListener('click', scrollToForm);
 
 const btnMiddle = document.querySelector('.middle'); 
 btnMiddle.addEventListener('click', scrollToForm);
+
+
+
+// Abrir pagina de comparar cartões
+const comparePageOpenBtn = document.getElementById('openCompare');
+
+function openComparisonPage() {
+  window.open('compare.html', '_blank');
+}
+
+comparePageOpenBtn.addEventListener('click', openComparisonPage)

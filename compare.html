@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdsBank - Cartões</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo-header">
+        <img src="img/logo.svg" alt="Logo AdsBank">
+        AdsBank
+      </div>
+    </div>
+  </header>
+
+  <section class="main-bg2">
+    <div class="container">
+      <h1>Compare os cartões AdsBank</h1>
+      <p>
+        Escolha o cartão perfeito para atender às suas necessidades financeiras. Descubra as características exclusivas de cada cartão AdsBank e tome uma decisão informada sobre qual é o ideal para você.
+      </p>
+
+      <div class="compares">
+        <div>
+          <img src="img/greencard.jpg" alt="cartão standard">
+          <h2>AdsBank Standard</h2>
+          <ul>
+            <li>Limite de Crédito Competitivo</li>
+            <li>Recompensas em Dinheiro</li>
+            <li>Isenção de Taxa Anual</li>
+            <li>Aplicativo Móvel Intuitivo</li>
+          </ul>
+        </div>
+
+        <div>
+          <img src="img/goldcard.jpg" alt="cartão gold">
+          <h2>AdsBank Gold</h2>
+          <ul>
+            <li>Limite de Crédito Generoso</li>
+            <li>Programa de Pontos Premium</li>
+            <li>Assistência de Viagem 24/7</li>
+            <li>Seguro de Proteção de Compras</li>
+            <li>Relatório de Gastos Personalizado</li>
+          </ul>
+        </div>
+
+        <div>
+          <img src="img/bluecard.jpg" alt="cartão elite">
+          <h2>AdsBank Elite</h2>
+          <ul>
+            <li>Limite de Crédito Elite</li>
+            <li>Salas Vips de Aeroporto</li>
+            <li>Concierge Pessoal 24/7</li>
+            <li>Seguro de Viagem Premium</li>
+            <li>Serviço de Motorista Privado</li>
+            <li>Desconto em Voos Particulares</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <article class="form-section">
+    <div class="container">
+      <h1>Abrir conta <span class="especial-custom-h1">AdsBank</span></h1>
+
+      <form action="" method="post" id="myForm">
+
+        <div class="form-group-1">
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Nome e Sobrenome" required>
+        </div>
+    
+        <div class="form-group-2">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="XXX.XXX.XXX-XX" required>
+        </div>
+    
+        <div class="form-group-3">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@example.com" required>
+        </div>
+    
+        <div class="form-group-4">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXX-XXXX" required>
+        </div>
+    
+        <div class="form-group-5">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" placeholder="YYYY-MM-DD" required>
+        </div>
+    
+        <div class="form-group-6">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="XXXXX-XXX" required>
+        </div>
+    
+        <div class="form-group-7">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Bairro" required>
+        </div>
+    
+        <p>Selecione seu cartão</p>
+        <div class="cartao-group">
+            <div class="custom-radio">
+                <input type="radio" id="cartao1" name="cartao" value="cartao1" required>
+                <label for="cartao1">Gold</label>
+            </div>
+    
+            <div class="custom-radio">
+                <input type="radio" id="cartao2" name="cartao" value="cartao2" required>
+                <label for="cartao2">Elite</label>
+            </div>
+    
+            <div class="custom-radio">
+                <input type="radio" id="cartao3" name="cartao" value="cartao3" required>
+                <label for="cartao3">Standard</label>
+            </div>
+        </div>
+    
+        <div class="form-group-checkbox">
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos e condições</label>
+        </div>
+    
+        <button type="submit" id="enviar-btn" class="button">Enviar -></button>
+    </form>
+    
+    </div>
+  </article>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+      <img src="./img/logo.svg" alt="adsbank">
+      <div class="footer-contato">
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="tel:+552199999999">+55 81 988888888</a></li>
+          <li><a href="mailto:contato@adsbank.com">contato@adsbank.com</a></li>
+          <li>Rua Ali Perto, 42 - Maranguape 1</li>
+          <li>Paulista - PE</li>
+        </ul>
+      </div>
+      <div class="footer-informacoes">
+        <h3>Informações</h3>
+        <nav>
+          <ul>
+            <li><a href="">Contato</a></li>
+            <li><a href="">Termos e Condições</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p>AdsBank © Alguns direitos reservados.</p>
+    </div>
+  </footer> 
+</body>
+</html>
